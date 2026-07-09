@@ -1,3 +1,7 @@
+Link:
+https://kanitprodsusspecialstore.github.io/IP-8-Gamifikasi-H5P-Drag-and-Drop-Pemilah-Indikator-Metrik-Internal-vs.-Suara-Pelanggan/ 
+
+coding:
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -48,7 +52,7 @@
         /* Custom industrial scanlines */
         .scanlines {
             background: linear-gradient(
-                rgba(18, 24, 36, 0) 50%, 
+                rgba(18, 24, 36, 0) 50%,
                 rgba(0, 0, 0, 0.25) 50%
             ), linear-gradient(
                 90deg,
@@ -71,6 +75,7 @@
 </head>
 <body class="bg-cyber-bg text-white font-sans min-h-screen flex flex-col justify-between scanlines overflow-y-auto">
 
+
     <!-- HEADER / NAVIGATION -->
     <header class="border-b border-cyber-blue/30 bg-cyber-card/80 backdrop-blur px-4 py-3 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
@@ -87,9 +92,10 @@
         </div>
     </header>
 
+
     <!-- MAIN GAME CONTAINER -->
     <main class="flex-grow flex items-center justify-center p-4">
-        
+       
         <!-- STEP 1: GATEWAY & MISSION BRIEFING -->
         <section id="screen-gateway" class="w-full max-w-xl bg-cyber-card/90 border-2 border-cyber-blue/40 rounded-xl p-6 md:p-8 shadow-neonBlue">
             <div class="text-center mb-6">
@@ -98,13 +104,15 @@
                 <p class="text-xs text-cyber-blue mt-1">Sistem Simulasi Kepemimpinan Minimarket Futuristik</p>
             </div>
 
+
             <!-- HOOK / WHY -->
             <div class="bg-cyber-red/10 border-l-4 border-cyber-red p-4 rounded mb-6 text-sm">
                 <p class="font-bold text-cyber-red mb-1">⚠️ DETEKSI ANOMALI MANAJERIAL:</p>
                 <p class="text-gray-300">
-                    Hampir <strong class="text-white">80% Manajer Toko Baru</strong> gagal mempertahankan loyalitas pelanggan karena terjebak mengadili staf menggunakan asumsi pribadi atau metrik internal yang kaku. Apakah Anda memiliki insting objektif yang dibutuhkan untuk memimpin kru? Buktikan sekarang!
+                    Hampir <strong class="text-white">80% Manajer Baru</strong> gagal mempertahankan loyalitas pelanggan/stakeholder karena terjebak dengan kesalahan timnya dengan menggunakan asumsi pribadi. Apakah Anda memiliki insting objektif yang dibutuhkan untuk memimpin tim? Buktikan sekarang!
                 </p>
             </div>
+
 
             <form id="form-gateway" onsubmit="startMissionBriefing(event)" class="space-y-4">
                 <div>
@@ -121,18 +129,19 @@
             </form>
         </section>
 
+
         <!-- STEP 2: MISSION OBJECTIVE & RULES -->
         <section id="screen-briefing" class="hidden w-full max-w-2xl bg-cyber-card/95 border-2 border-cyber-yellow/40 rounded-xl p-6 md:p-8 shadow-neonYellow">
             <h2 class="text-xl md:text-2xl font-black text-cyber-blue uppercase tracking-wider border-b border-cyber-blue/20 pb-3 mb-4">
                 📋 DIREKTIF RESMI: SIKLUS FEEDBACK (INNER LOOP)
             </h2>
-            
+           
             <div class="space-y-4 text-sm text-gray-300">
                 <p>Halo, Manajer <span id="player-display-name" class="text-cyber-yellow font-bold"></span>!</p>
                 <p>
                     Sebagai pimpinan toko <strong class="text-cyber-blue">NEON-MART</strong>, staf Anda baru saja menyelesaikan giliran kerjanya. Sebelum memulai sesi 1-on-1 coaching, Anda memegang <strong class="text-cyber-yellow">10 Kartu Catatan Kinerja</strong> di meja kerja Anda.
                 </p>
-                
+               
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
                     <div class="border border-emerald-500/30 bg-emerald-950/20 p-3 rounded">
                         <h4 class="font-bold text-emerald-400 flex items-center gap-1">📂 MAP A: BAHAN UTAMA COACHING</h4>
@@ -144,6 +153,7 @@
                     </div>
                 </div>
 
+
                 <div class="bg-cyber-bg p-3 border border-cyber-blue/20 rounded">
                     <h4 class="font-bold text-cyber-blue text-xs uppercase mb-1">💡 Petunjuk Kontrol & Navigasi:</h4>
                     <ul class="list-disc pl-5 text-xs space-y-1 text-gray-400">
@@ -153,6 +163,7 @@
                 </div>
             </div>
 
+
             <div class="mt-6">
                 <button onclick="startGame()" class="w-full bg-cyber-blue hover:bg-cyan-400 text-black font-black py-3 rounded uppercase tracking-wider transition-all shadow-neonBlue hover:scale-[1.02] transform">
                     Mulai Sortir Dokumen! 🔥
@@ -160,9 +171,10 @@
             </div>
         </section>
 
+
         <!-- STEP 3: CORE EXECUTION (GAMIFICATION) -->
         <section id="screen-game" class="hidden w-full max-w-5xl flex flex-col gap-6">
-            
+           
             <!-- Game Progress & Score -->
             <div class="bg-cyber-card border border-cyber-blue/30 rounded-lg p-4 flex flex-wrap justify-between items-center gap-4">
                 <div class="flex items-center space-x-4">
@@ -177,6 +189,7 @@
                     </div>
                 </div>
 
+
                 <!-- Progress Bar -->
                 <div class="flex-grow max-w-md mx-4">
                     <div class="flex justify-between text-xs text-gray-400 mb-1">
@@ -188,6 +201,7 @@
                     </div>
                 </div>
 
+
                 <!-- Score Board -->
                 <div class="bg-cyber-bg border border-cyber-yellow/30 px-4 py-2 rounded text-center">
                     <p class="text-[10px] text-cyber-yellow uppercase font-bold tracking-wider">Metrik Akurasi</p>
@@ -195,9 +209,10 @@
                 </div>
             </div>
 
+
             <!-- Gameboard Layout -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                
+               
                 <!-- Map A Target Zone (Left) -->
                 <div id="zone-voc" class="drop-zone border-2 border-emerald-500/50 bg-emerald-950/10 hover:bg-emerald-950/20 p-5 rounded-xl flex flex-col items-center justify-start min-h-[300px] transition-all" data-target="voc">
                     <div class="text-center pointer-events-none mb-4">
@@ -209,6 +224,7 @@
                     <div class="slot-container w-full space-y-3 flex-grow flex flex-col justify-start" id="slot-voc"></div>
                 </div>
 
+
                 <!-- Tumpukan Kartu Utama (Center) -->
                 <div class="bg-cyber-card border border-cyber-blue/30 rounded-xl p-5 flex flex-col justify-between">
                     <div class="text-center pb-3 border-b border-cyber-blue/20">
@@ -217,16 +233,19 @@
                         <p id="tap-hint" class="text-[11px] text-cyber-yellow animate-pulse mt-1">💡 Klik kartu, lalu klik Map tujuan untuk pindah instan!</p>
                     </div>
 
+
                     <!-- Cards Stack Container -->
                     <div id="deck-container" class="my-4 flex flex-col gap-3 min-h-[220px] justify-center items-center">
                         <!-- Cards injected by JS -->
                     </div>
+
 
                     <!-- Selected Indicator for Mobile -->
                     <div id="mobile-selection-indicator" class="hidden text-center text-xs p-2 bg-cyber-blue/10 border border-cyber-blue rounded">
                         <span>Kartu terpilih: </span><strong id="selected-card-name" class="text-cyber-yellow"></strong>
                     </div>
                 </div>
+
 
                 <!-- Map B Target Zone (Right) -->
                 <div id="zone-internal" class="drop-zone border-2 border-cyber-red/50 bg-cyber-red/5 hover:bg-cyber-red/10 p-5 rounded-xl flex flex-col items-center justify-start min-h-[300px] transition-all" data-target="internal">
@@ -239,7 +258,9 @@
                     <div class="slot-container w-full space-y-3 flex-grow flex flex-col justify-start" id="slot-internal"></div>
                 </div>
 
+
             </div>
+
 
             <!-- Action buttons -->
             <div class="flex flex-col sm:flex-row gap-4 items-center justify-center mt-4">
@@ -249,6 +270,7 @@
             </div>
         </section>
 
+
         <!-- STEP 4: POST-ACTION DEBRIEF -->
         <section id="screen-debrief" class="hidden w-full max-w-4xl bg-cyber-card border-2 border-cyber-blue rounded-xl p-6 md:p-8 shadow-neonBlue">
             <div class="text-center border-b border-cyber-blue/20 pb-6 mb-6">
@@ -256,6 +278,7 @@
                 <h2 class="text-3xl font-black text-white">REKAPITULASI COACHING MANAJEMEN</h2>
                 <p class="text-sm text-gray-400 mt-1">Laporan Akurasi Pengambilan Keputusan Manajer</p>
             </div>
+
 
             <!-- Score and Badge Showcase -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 items-center bg-cyber-bg p-6 border border-cyber-blue/20 rounded-xl">
@@ -275,6 +298,7 @@
                 </div>
             </div>
 
+
             <!-- Detailed Answer-by-Answer Feedback -->
             <div>
                 <h3 class="text-lg font-bold text-cyber-yellow uppercase mb-4 tracking-wider flex items-center gap-2">
@@ -284,6 +308,7 @@
                     <!-- Dynamic feedack inserted here -->
                 </div>
             </div>
+
 
             <div class="mt-8 pt-6 border-t border-cyber-blue/20 flex flex-col sm:flex-row gap-4 justify-between items-center">
                 <div class="text-xs text-gray-500">
@@ -295,7 +320,9 @@
             </div>
         </section>
 
+
     </main>
+
 
     <!-- FOOTER -->
     <footer class="border-t border-cyber-blue/20 bg-cyber-card/60 py-4 px-4 text-center text-xs tracking-wider text-gray-500">
@@ -304,6 +331,7 @@
             <p class="text-cyber-blue/60">Sistem Pembelajaran Mandiri Terintegrasi LMS v1.4</p>
         </div>
     </footer>
+
 
     <!-- INTERACTIVE SCRIPTS -->
     <script>
@@ -383,6 +411,7 @@
             }
         ];
 
+
         // GAME STATES
         let currentAnswers = {
             voc: [],
@@ -394,10 +423,12 @@
             nik: ''
         };
 
+
         // WEB AUDIO API SYSTEM
         let audioCtx = null;
         let isAudioPlaying = false;
         let bgmIntervalId = null;
+
 
         // Custom Web Audio API Synthesizer (BGM & SFX)
         function initAudio() {
@@ -406,17 +437,21 @@
             }
         }
 
+
         // Play SFX (Lightweight custom tones)
         function playSFX(type) {
             if (!audioCtx) return;
             if (audioCtx.state === 'suspended') audioCtx.resume();
+
 
             const osc = audioCtx.createOscillator();
             const gain = audioCtx.createGain();
             osc.connect(gain);
             gain.connect(audioCtx.destination);
 
+
             const now = audioCtx.currentTime;
+
 
             if (type === 'success') {
                 // Happy chord arpeggio
@@ -448,6 +483,7 @@
             }
         }
 
+
         // BGM Generation - 3 Instruments Synth Loop
         // Chord Progression (Am - F - C - G)
         const chords = [
@@ -459,14 +495,18 @@
         const bassNotes = [110.00, 87.31, 130.81, 98.00]; // A2, F2, C3, G2
         let currentStep = 0;
 
+
         function playBGMStep() {
             if (!isAudioPlaying || !audioCtx) return;
+
 
             const now = audioCtx.currentTime;
             const stepDuration = 1.0; // 1 step = 1 second
 
+
             const activeChord = chords[currentStep % 4];
             const activeBass = bassNotes[currentStep % 4];
+
 
             // 1. INSTRUMEN A: Bass (Deep triangle Wave)
             const bassOsc = audioCtx.createOscillator();
@@ -479,6 +519,7 @@
             bassGain.connect(audioCtx.destination);
             bassOsc.start(now);
             bassOsc.stop(now + stepDuration);
+
 
             // 2. INSTRUMEN B: Synth Chords (Soft saw wave through simple filter simulated by pitch/gain)
             activeChord.forEach((freq, idx) => {
@@ -493,6 +534,7 @@
                 padOsc.start(now);
                 padOsc.stop(now + stepDuration);
             });
+
 
             // 3. INSTRUMEN C: Cyber Arpeggiator (Ping sine wave, playing 16th notes fast)
             const arpNotes = [activeChord[0]*2, activeChord[1]*2, activeChord[2]*2, activeChord[1]*2];
@@ -511,24 +553,28 @@
                 arpOsc.stop(now + ((idx + 1) * arpSubstep));
             });
 
+
             currentStep++;
         }
+
 
         function toggleAudio() {
             initAudio();
             const btn = document.getElementById('btn-audio');
             const icon = document.getElementById('audio-icon');
 
+
             if (audioCtx.state === 'suspended') {
                 audioCtx.resume();
             }
+
 
             if (!isAudioPlaying) {
                 isAudioPlaying = true;
                 icon.innerText = '🔊';
                 btn.classList.add('bg-cyber-yellow', 'text-black');
                 btn.innerHTML = `<span id="audio-icon">🔊</span> BGM: ON`;
-                
+               
                 // Immediately play first step and start interval
                 playBGMStep();
                 bgmIntervalId = setInterval(playBGMStep, 1000);
@@ -540,35 +586,40 @@
             }
         }
 
+
         // STEP 1 TRANSITION -> STEP 2 (Briefing)
         function startMissionBriefing(event) {
             event.preventDefault();
             userData.nama = document.getElementById('input-nama').value;
             userData.nik = document.getElementById('input-nik').value;
 
+
             document.getElementById('player-display-name').innerText = userData.nama;
-            
+           
             document.getElementById('screen-gateway').classList.add('hidden');
             document.getElementById('screen-briefing').classList.remove('hidden');
-            
+           
             // Touch/Click Interaction unlocks audio
             initAudio();
             playSFX('success');
         }
 
+
         // STEP 2 TRANSITION -> STEP 3 (Gameplay)
         function startGame() {
             document.getElementById('screen-briefing').classList.add('hidden');
             document.getElementById('screen-game').classList.remove('hidden');
-            
+           
             document.getElementById('hud-name').innerText = userData.nama;
-            
+           
             initGameEngine();
             playSFX('click');
         }
 
+
         // GAMEPLAY ENGINE LOGIC
         let deckCards = [];
+
 
         function initGameEngine() {
             deckCards = [...questionDatabase].sort(() => Math.random() - 0.5);
@@ -579,12 +630,14 @@
             setupDropZones();
         }
 
+
         function updateHUD() {
             const totalAssigned = currentAnswers.voc.length + currentAnswers.internal.length;
             const percentage = Math.round((totalAssigned / questionDatabase.length) * 100);
-            
+           
             document.getElementById('hud-progress-text').innerText = `${percentage}% (${totalAssigned} / ${questionDatabase.length} Kartu)`;
             document.getElementById('hud-progress-bar').style.width = `${percentage}%`;
+
 
             // Dynamic Level HUD based on progress
             const hudLevel = document.getElementById('hud-level');
@@ -599,13 +652,16 @@
                 hudLevel.className = "font-bold text-cyber-red animate-pulse";
             }
 
+
             // Realtime points estimate
             document.getElementById('hud-score').innerText = `${totalAssigned * 10} XP`;
         }
 
+
         function renderDeck() {
             const container = document.getElementById('deck-container');
             container.innerHTML = '';
+
 
             if (deckCards.length === 0) {
                 container.innerHTML = `
@@ -617,12 +673,14 @@
                 return;
             }
 
+
             // Display top card from stack to prevent overlapping & keep interface clean
             const card = deckCards[0];
             const cardEl = document.createElement('div');
             cardEl.className = "card bg-cyber-card border-2 border-cyber-blue hover:border-cyber-yellow p-5 rounded-lg cursor-grab active:cursor-grabbing w-full shadow-neonBlue transition-all transform hover:-translate-y-1 select-none flex flex-col justify-between items-center text-center gap-3";
             cardEl.draggable = true;
             cardEl.id = card.id;
+
 
             cardEl.innerHTML = `
                 <div class="flex items-center justify-between w-full border-b border-cyber-blue/20 pb-2">
@@ -635,37 +693,42 @@
                 </div>
             `;
 
+
             // Desktop Drag & Drop Events
             cardEl.addEventListener('dragstart', (e) => {
                 e.dataTransfer.setData('text/plain', card.id);
                 playSFX('click');
             });
 
+
             // Mobile / Click Fallback (Tap-to-move)
             cardEl.addEventListener('click', () => {
                 selectCardForMobile(card.id);
             });
 
+
             container.appendChild(cardEl);
         }
+
 
         // Tap-to-Move Selection
         function selectCardForMobile(cardId) {
             playSFX('click');
             activeSelectedCardId = cardId;
             const targetCard = questionDatabase.find(q => q.id === cardId);
-            
+           
             const indicator = document.getElementById('mobile-selection-indicator');
             const indicatorName = document.getElementById('selected-card-name');
-            
+           
             indicator.classList.remove('hidden');
             indicatorName.innerText = `ID ${targetCard.id} terpilih. Sekarang, sentuh/klik Map tujuan di samping!`;
         }
 
+
         // Drop zones setup
         function setupDropZones() {
             const zones = document.querySelectorAll('.drop-zone');
-            
+           
             zones.forEach(zone => {
                 // Desktop Drag Handlers
                 zone.addEventListener('dragover', (e) => {
@@ -673,9 +736,11 @@
                     zone.classList.add('bg-cyber-blue/10', 'scale-[1.01]');
                 });
 
+
                 zone.addEventListener('dragleave', () => {
                     zone.classList.remove('bg-cyber-blue/10', 'scale-[1.01]');
                 });
+
 
                 zone.addEventListener('drop', (e) => {
                     e.preventDefault();
@@ -683,6 +748,7 @@
                     const cardId = e.dataTransfer.getData('text/plain');
                     moveCardToZone(cardId, zone.dataset.target);
                 });
+
 
                 // Mobile/Tap Handlers
                 zone.addEventListener('click', () => {
@@ -696,17 +762,21 @@
             });
         }
 
+
         function moveCardToZone(cardId, zoneType) {
             const cardObj = questionDatabase.find(q => q.id === cardId);
             if (!cardObj) return;
+
 
             // Remove from current arrays if present
             deckCards = deckCards.filter(c => c.id !== cardId);
             currentAnswers.voc = currentAnswers.voc.filter(id => id !== cardId);
             currentAnswers.internal = currentAnswers.internal.filter(id => id !== cardId);
 
+
             // Add to new zone
             currentAnswers[zoneType].push(cardId);
+
 
             playSFX('click');
             renderSlotList(zoneType);
@@ -714,12 +784,15 @@
             updateHUD();
         }
 
+
         // Render sorted items inside the targets list
         function renderSlotList(zoneType) {
             const listContainer = document.getElementById(`slot-${zoneType}`);
             listContainer.innerHTML = '';
 
+
             const listIds = currentAnswers[zoneType];
+
 
             if (listIds.length === 0) {
                 listContainer.innerHTML = `
@@ -729,6 +802,7 @@
                 `;
                 return;
             }
+
 
             listIds.forEach(id => {
                 const cardData = questionDatabase.find(q => q.id === id);
@@ -744,12 +818,14 @@
             });
         }
 
+
         function removeCard(cardId, zoneType) {
             currentAnswers[zoneType] = currentAnswers[zoneType].filter(id => id !== cardId);
             const cardObj = questionDatabase.find(q => q.id === cardId);
-            
+           
             // Put back into deck
             deckCards.push(cardObj);
+
 
             playSFX('click');
             renderSlotList(zoneType);
@@ -757,37 +833,43 @@
             updateHUD();
         }
 
+
         // VERIFY ANSWERS & CALCULATE FINAL RESULTS
         function checkGameCompletion() {
             const totalAssigned = currentAnswers.voc.length + currentAnswers.internal.length;
-            
+           
             if (totalAssigned < questionDatabase.length) {
                 playSFX('error');
-                
+               
                 // Visual feedback shake on pending container
                 const deck = document.getElementById('deck-container');
                 deck.classList.add('shake-animation');
                 setTimeout(() => deck.classList.remove('shake-animation'), 300);
+
 
                 // Inline notification
                 alert("⚠️ Selesai Menyortir? Masih ada dokumen pending yang belum ditaruh ke Map! Selesaikan penyortiran 10 kartu sebelum mulai coaching.");
                 return;
             }
 
+
             processDebrief();
         }
+
 
         function processDebrief() {
             let totalCorrect = 0;
             const feedbackContainer = document.getElementById('feedback-list');
             feedbackContainer.innerHTML = '';
 
+
             questionDatabase.forEach(card => {
                 const isVocZone = currentAnswers.voc.includes(card.id);
                 const isInternalZone = currentAnswers.internal.includes(card.id);
-                
+               
                 let isCorrect = false;
                 let playerSelectedZone = '';
+
 
                 if (isVocZone && card.category === 'voc') {
                     isCorrect = true;
@@ -799,15 +881,18 @@
                     playerSelectedZone = isVocZone ? 'A' : 'B';
                 }
 
+
                 if (isCorrect) totalCorrect++;
+
 
                 // Build detailed feedback card
                 const item = document.createElement('div');
                 item.className = `p-4 rounded-lg border ${
-                    isCorrect 
-                        ? 'border-emerald-500/30 bg-emerald-950/10' 
+                    isCorrect
+                        ? 'border-emerald-500/30 bg-emerald-950/10'
                         : 'border-cyber-red/30 bg-cyber-red/5'
                 }`;
+
 
                 item.innerHTML = `
                     <div class="flex flex-wrap justify-between items-center gap-2 mb-2">
@@ -820,7 +905,7 @@
                     </div>
                     <p class="text-sm font-bold text-white mb-2">"${card.text}"</p>
                     <p class="text-xs text-gray-400 leading-relaxed mb-2">
-                        Anda mengelompokkan ke: <strong class="${isCorrect ? 'text-emerald-400' : 'text-cyber-red'}">Map ${playerSelectedZone}</strong> 
+                        Anda mengelompokkan ke: <strong class="${isCorrect ? 'text-emerald-400' : 'text-cyber-red'}">Map ${playerSelectedZone}</strong>
                         (Kategori Riil: ${card.category === 'voc' ? 'Bahan Coaching - Suara Pelanggan/Fakta' : 'Pantauan Internal'})
                     </p>
                     <p class="text-xs text-cyber-blue bg-cyber-bg/50 p-2 border-l-2 border-cyber-blue rounded">
@@ -830,15 +915,18 @@
                 feedbackContainer.appendChild(item);
             });
 
+
             // Calculate score
             const finalScore = (totalCorrect / questionDatabase.length) * 100;
             document.getElementById('debrief-score').innerText = `${finalScore}`;
             document.getElementById('debrief-correct-count').innerText = `${totalCorrect} dari 10 Benar`;
 
+
             // Badge System and Positive Reinforcements
             let badgeIcon = '🥉';
             let badgeName = 'Manajer Amatir';
             let reinforcementText = '';
+
 
             if (finalScore === 100) {
                 badgeIcon = '👑';
@@ -857,14 +945,17 @@
                 playSFX('error');
             }
 
+
             document.getElementById('debrief-badge-icon').innerText = badgeIcon;
             document.getElementById('debrief-badge-name').innerText = badgeName;
             document.getElementById('debrief-reinforcement').innerHTML = reinforcementText;
+
 
             // Transition to screen 4
             document.getElementById('screen-game').classList.add('hidden');
             document.getElementById('screen-debrief').classList.remove('hidden');
         }
+
 
         // RESET GAME & TRY AGAIN
         function resetGame() {
@@ -876,3 +967,4 @@
     </script>
 </body>
 </html>
+
